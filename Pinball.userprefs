@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SpawnBall.cs">
+    <Files>
+      <File FileName="Assets/BallScript.cs" Line="18" Column="1" />
+      <File FileName="Assets/GameController.cs" Line="22" Column="18" />
+      <File FileName="Assets/LeftFlipperScript.cs" Line="10" Column="3" />
+      <File FileName="Assets/RightFlipperScript.cs" Line="10" Column="3" />
+      <File FileName="Assets/SpawnBall.cs" Line="13" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
