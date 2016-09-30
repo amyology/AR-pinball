@@ -4,20 +4,14 @@ using System.Collections;
 public class RaycastTouch : MonoBehaviour {
 
 	Ray ray;
-	Ray ray2;
 	RaycastHit hit;
-	//GameObject leftFlipper;
-	//GameObject rightFlipper;
 	public HingeJoint2D leftFlipperJoint;
 	public HingeJoint2D rightFlipperJoint;
 	public GUIText dbText;
 
-	void Start () {
-//		leftFlipper = GameObject.FindWithTag ("Left");
-//		leftFlipperJoint = leftFlipper.GetComponent<HingeJoint2D> ();
-//		rightFlipper = GameObject.FindWithTag ("Right");
-//		rightFlipperJoint = rightFlipper.GetComponent<HingeJoint2D> ();
-	}
+	public float ballForce = 1000;
+	public Rigidbody2D rb;
+	bool ballActive = false;
 
 	void FixedUpdate ()
 	{
@@ -35,6 +29,13 @@ public class RaycastTouch : MonoBehaviour {
 
 				if (hit.transform.gameObject.tag == "Rightie") {
 					rightFlipperJoint.useMotor = true;
+				}
+
+				if (hit.transform.gameObject.tag == "BallButton") {
+					if (ballActive == false) {
+						ballActive = true;
+						rb.AddForce (new Vector2(0,ballForce));
+					}
 				}
 			}
 
