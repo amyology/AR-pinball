@@ -35,4 +35,5 @@ public class GameController : MonoBehaviour {
 		MinusLife ();
 		ballDown = true;
 	}
+		
 }

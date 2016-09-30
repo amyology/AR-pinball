@@ -32,4 +32,5 @@ public class TestGameController : MonoBehaviour {
 		GameObject ballClone = Instantiate (ball) as GameObject;
 		ballClone.transform.position = ballSpawn.transform.position;
 	}
+		
 }

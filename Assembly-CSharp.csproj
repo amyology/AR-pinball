@@ -51,6 +51,7 @@
      <Compile Include="Assets\NewScripts\BallController.cs" />
      <Compile Include="Assets\NewScripts\BoundaryScript.cs" />
      <Compile Include="Assets\NewScripts\BumperController.cs" />
+     <Compile Include="Assets\NewScripts\RaycastTouch.cs" />
      <Compile Include="Assets\NewScripts\TestGameController.cs" />
      <Compile Include="Assets\RightFlipperScript.cs" />
      <Compile Include="Assets\SpawnBall.cs" />
@@ -98,6 +99,7 @@
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\Handwriting.xml" />
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
      <None Include="Assets\StreamingAssets\QCAR\Images.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
@@ -105,6 +107,7 @@
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
+     <None Include="Assets\StreamingAssets\QCAR\Text.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
