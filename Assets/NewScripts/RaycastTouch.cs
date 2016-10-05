@@ -7,44 +7,30 @@ public class RaycastTouch : MonoBehaviour {
 	RaycastHit hit;
 	public HingeJoint2D leftFlipperJoint;
 	public HingeJoint2D rightFlipperJoint;
-	public GUIText dbText;
 
-	public float ballForce = 1000;
-	public Rigidbody2D rb;
-	bool ballActive = false;
-
-	void FixedUpdate ()
-	{
-		if (Input.touchCount > 0 || Input.GetTouch (0).phase == TouchPhase.Began) {
+	void Update () {
+		foreach (Touch touch in Input.touches) { 
 			
-			ray = Camera.main.ScreenPointToRay (Input.GetTouch (0).position);
-
-			Debug.DrawRay (ray.origin, ray.direction * 20, Color.red);
+			ray = Camera.main.ScreenPointToRay (touch.position);
 
 			if (Physics.Raycast (ray, out hit, Mathf.Infinity)) {
-				
-				if (hit.transform.gameObject.tag == "Leftie") {
+			
+				if (hit.transform.gameObject.tag == "Leftie" && touch.phase == TouchPhase.Began) {
 					leftFlipperJoint.useMotor = true;
 				}
 
-				if (hit.transform.gameObject.tag == "Rightie") {
+				if (hit.transform.gameObject.tag == "Leftie" && touch.phase == TouchPhase.Ended) {
+					leftFlipperJoint.useMotor = false;
+				}
+
+				if (hit.transform.gameObject.tag == "Rightie" && touch.phase == TouchPhase.Began) {
 					rightFlipperJoint.useMotor = true;
 				}
 
-				if (hit.transform.gameObject.tag == "BallButton") {
-					if (ballActive == false) {
-						ballActive = true;
-						rb.AddForce (new Vector2(0,ballForce));
-					}
+				if (hit.transform.gameObject.tag == "Rightie" && touch.phase == TouchPhase.Ended) {
+					rightFlipperJoint.useMotor = false;
 				}
 			}
-
-		}
-
-		if (Input.GetTouch (0).phase == TouchPhase.Ended) {
-			leftFlipperJoint.useMotor = false;
-
-			rightFlipperJoint.useMotor = false;
 		}
 	}
 }

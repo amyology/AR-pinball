@@ -10,22 +10,22 @@ public class TestGameController : MonoBehaviour {
 	public GameObject ball;
 	public GameObject ballSpawn;
 
-	public GUIText scoreText;
-	public GUIText livesText;
+	public GameObject scoreText;
+	public GameObject livesText;
 
 	void Start(){
-		GameObject ballClone = Instantiate (ball) as GameObject;
-		ballClone.transform.position = ballSpawn.transform.position;
+//		GameObject ballClone = Instantiate (ball) as GameObject;
+//		ballClone.transform.position = ballSpawn.transform.position;
 	}
 
 	public void AddScore(int plusScore){
 		gameScore += plusScore;
-		scoreText.text = "Score: " + gameScore;
+		scoreText.GetComponent<TextMesh>().text = "Score: " + gameScore;
 	}
 
 	public void SubLives(){
 		gameLives -= 1;
-		livesText.text = "Lives: " + gameLives;
+		livesText.GetComponent<TextMesh>().text = "Lives: " + gameLives;
 	}
 
 	public void RespawnBall(){

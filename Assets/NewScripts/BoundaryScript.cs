@@ -5,7 +5,7 @@ using System.Collections;
 public class BoundaryScript : MonoBehaviour {
 	TestGameController gameController;
 
-	public GUIText endText;
+	public GameObject endText;
 
 	public GameObject gameControllerObject;
 
@@ -21,7 +21,7 @@ public class BoundaryScript : MonoBehaviour {
 			gameController.RespawnBall ();
 		}
 		if (gameController.gameLives == 0) {
-			endText.enabled = true;
+			endText.SetActive(true);
 			StartCoroutine (Reload ());
 		}
 	}
