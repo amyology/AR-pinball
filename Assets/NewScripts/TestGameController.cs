@@ -13,11 +13,6 @@ public class TestGameController : MonoBehaviour {
 	public GameObject scoreText;
 	public GameObject livesText;
 
-	void Start(){
-//		GameObject ballClone = Instantiate (ball) as GameObject;
-//		ballClone.transform.position = ballSpawn.transform.position;
-	}
-
 	public void AddScore(int plusScore){
 		gameScore += plusScore;
 		scoreText.GetComponent<TextMesh>().text = "Score: " + gameScore;

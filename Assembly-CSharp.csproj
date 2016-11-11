@@ -94,11 +94,9 @@
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
-     <None Include="Assets\StreamingAssets\QCAR\Handwriting.xml" />
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
-     <None Include="Assets\StreamingAssets\QCAR\Images.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
-     <None Include="Assets\StreamingAssets\QCAR\Writing.xml" />
+     <None Include="Assets\StreamingAssets\QCAR\Pepsi.xml" />
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />

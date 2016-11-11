@@ -2,16 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NewScripts/RaycastTouch.cs">
     <Files>
-      <File FileName="Assets/LeftFlipperScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/SpawnBall.cs" Line="1" Column="1" />
-      <File FileName="Assets/BallScript.cs" Line="10" Column="2" />
-      <File FileName="Assets/GameController.cs" Line="38" Column="3" />
-      <File FileName="Assets/RightFlipperScript.cs" Line="21" Column="1" />
-      <File FileName="Assets/NewScripts/BumperController.cs" Line="9" Column="2" />
-      <File FileName="Assets/NewScripts/TestGameController.cs" Line="23" Column="42" />
-      <File FileName="Assets/NewScripts/BoundaryScript.cs" Line="20" Column="38" />
-      <File FileName="Assets/NewScripts/BallController.cs" Line="16" Column="1" />
-      <File FileName="Assets/NewScripts/RaycastTouch.cs" Line="50" Column="2" />
+      <File FileName="Assets/NewScripts/TestGameController.cs" Line="30" Column="3" />
+      <File FileName="Assets/NewScripts/BumperController.cs" Line="19" Column="1" />
+      <File FileName="Assets/NewScripts/BoundaryScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/NewScripts/RaycastTouch.cs" Line="2" Column="26" />
+      <File FileName="Assets/NewScripts/RaycastBall.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
